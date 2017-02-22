@@ -1,2 +1,2 @@
 # Story Time
-> Let's add a paragraph to the README :)
+Hey there, I'm a paragraph on our new sweet README
