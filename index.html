@@ -4,29 +4,78 @@
 <head>
     <meta charset="utf-8">
     <title>MobiStickers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <style>
+        /* select multiple base elements */
+        h1,
+        h2,
+        p {
+            margin: 0;
+        }
+
+        /* select by id */
+        #home {
+            background-color: green;
+        }
+
+        #product {
+            background-color: blue;
+        }
+
+        #about {
+            background-color: yellow;
+        }
+
+        #contact {
+            background-color: maroon;
+        }
+
+        /* select by class */
+        .disclaimer {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* select a class inside the id */
+        #product .disclaimer {
+            color: purple;
+        }
+        
+        /* combine classes */
+        .disclaimer.super-disclaimer {
+            font-size: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
-    <h1>MobiStickers</h1>
-    <p>Insert Image</p>
-
-    <h2>Product</h2>
-    <p>Insert Image, Description, etc.</p>
-
-    <h2>About Us</h2>
-    <p>Insert text</p>
-
-    <h2>Contact Us</h2>
-    <p>Insert Email</p>
-    
+    <div id="home">
+        <h1>MobiStickers</h1>
+        <p>Insert Image</p>
+        <p class="disclaimer">We're not liable.</p>
+    </div>
+    <div id="product">
+        <h2>Product</h2>
+        <p>Insert Image, Description, etc.</p>
+        <p class="disclaimer">We're not liable.</p>
+    </div>
+    <div id="about">
+        <h2>About Us</h2>
+        <p>Insert text</p> 
+        <p class="disclaimer super-disclaimer">We're not liable.</p>
+    </div>
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Insert Email</p>
+    </div>    
     <footer>this is footer</footer>
 
 </body>
