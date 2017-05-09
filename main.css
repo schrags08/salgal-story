@@ -1,0 +1,55 @@
+    /* select multiple base elements */
+        
+        h1 {
+            font-weight: lighter;
+        }
+        
+        h2 {
+            font-weight: lighter;
+        }
+        
+        a {
+            color: #3498DB
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        div {
+            margin: 20px;
+            padding: 40px;
+        }
+        /* select by id */
+        
+        #home {
+            background-color: #ECF0F1;
+        }
+        
+        #product {
+            background-color: #F7F9F9;
+        }
+        
+        #about {
+            background-color: #ECF0F1;
+        }
+        
+        #contact {
+            background-color: #F7F9F9;
+        }
+        /* select by class */
+        
+        .disclaimer {
+            font-weight: bold;
+            font-size: 22px;
+        }
+        /* select a class inside the id */
+        
+        #product .disclaimer {
+            color: #3498DB;
+        }
+        /* combine classes */
+        
+        .disclaimer.super-disclaimer {
+            font-size: 10px;
+        }
